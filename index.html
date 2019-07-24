@@ -264,11 +264,11 @@
 </nav>
       <div class="body-wrap">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-简明的Linux" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2019/07/23/hello-world/" class="article-date">
-      <time datetime="2019-07-23T12:38:44.472Z" itemprop="datePublished">2019-07-23</time>
+      <a href="/2019/07/24/简明的Linux/" class="article-date">
+      <time datetime="2019-07-24T10:47:51.671Z" itemprop="datePublished">2019-07-24</time>
 </a>
 
 
@@ -279,33 +279,12 @@
       <input type="hidden" class="isFancy" />
     
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/23/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-      
-    
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <hr>
+<p>title: 我的第一篇<br>date: 2019-07-24 17:44:10<br>tags:Linux基础常识<br>一 Linux的文件系统结构<br>  /     虚拟目录的根目录，通常不会在这里存储文件<br>  /bin  二进制目录，存放许多用户级的GNU工具<br>  /boot 启动目录，存放启动文件<br>  /dev  设备目录，Linux在这里创建设备节点<br>  /etc  系统配置文件目录<br>  /home 主目录，Linux在这里创建用户目录<br>  /lib  库目录，存放系统和应用程序的库文件<br>  /media媒体目录，可移动设备的常用挂载点<br>  /mnt  挂载目录，另一挂载点目录<br>  /opt  可选目录，常放置第三方软件包和数据文件<br>  /proc 进程目录  存放现有硬件及当前进程的相关信息<br>  /root<br>  /sbin 系统二进制文件，管理员级工具<br>  /run  运行目录  存放系统运行时文件  数据<br>  /srv  服务目录  本地服务的相关文件<br>  /sys  存放系统硬件信息<br>  /tmp  临时目录，创建删除临时文件<br>  /usr  用户二进制文件<br>  /var    可变目录，如日志</p>
+<p>二  Linux简单的命令<br>  ls 【选项}】【参数】列举当前目录文件<br>    -a  所有文件<br>    -l  详细列出文件<br>    -h 以人的习惯显示文件大小<br>    -R  列出当前目录下包含的子目录中的文件<br>    查看文件的inode编号<br>  通配符 <em>零个或多个字符<br>         ？一个字符<br>     【a-i】 a到i中的字符<br>     【！a】非a的字符<br>  cd 【参数】切换目录<br>     .当前目录<br>     .. 上级目录<br>  touch 创建文件  更新文件创建时间<br>  mkdir【-p】递归创建目录<br>  cp【-r】 源文件  复文件<br>  mv移动文件  重命名<br>  rm  删除文件<br>   -i删除时询问<br>   -f直接强制删除<br>   -r 进入目录<br>  rmdir  删除目录<br>  file 参数   查看文件类型<br>  查看文件内容  cat more less<br>   cat  -n给所有行加上行号<br>     -b只给文本加行号<br>     -T去除文中所有制表符<br>   more  less 可分页查看<br>  tail  查看部分文件<br>   -n 2 文件  查看最后两行<br>  head  -5  文件   查看前五行<br>  默认情况下  tail  head  10行<br>三监测命令<br>  探查进程<br>    ps 只显示会运行在当前控制台下的属于当前用户的进程<br>      -ef查看系统上所有进程<br>    top 实时监测<br>  结束进程  kill   killall<br>    kill  进程ID<br>    killall  命令<br>  磁盘空间  df  du   mount<br>  mount 挂载设备<br>     mount  -t  type  device  directory<br>       type：vfat  Windows长文件系统<br>             ntfs  wnt，xp，w7广泛使用的高级文件系统<br>         iso9660   cd-rom<br>    -v  详细模式<br>  df显示挂载磁盘使用情况<br>  du显示特定目录的磁盘使用情况<br>搜索数据 grep 【options】  pattern 【file】<br>       -v   反向搜索<br>       -n   匹配行前加行号<br>       -c  显示多少行匹配<br>压缩打包  tar  -zcvf  **</em>.tar   f1 f2 f3 f4<br>          解开  tar  -xvf  ****.tar</p>
 
       
     </div>
